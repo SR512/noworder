@@ -33,7 +33,7 @@
                 </ul>
 
                 <div class="text-center">
-                    <a href="{{route('users.list')}}" class="btn btn-primary btn-sm">Show All</a>
+                    <a href="{{route('users.store.list')}}" class="btn btn-primary btn-sm">Show All</a>
                 </div>
             </div>
         </div>

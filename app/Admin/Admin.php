@@ -41,4 +41,9 @@ class Admin extends Authenticatable
         'payment_verified_at' => 'datetime',
         'mobile_verified_at' => 'datetime',
     ];
+
+    public function getCategory()
+    {
+        return $this->belongsTo('App\Admin\Category','category_id');
+    }
 }

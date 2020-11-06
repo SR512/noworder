@@ -62,6 +62,33 @@
     @endrole
 
 
+    @role('Admin')
+    <div class="row">
+
+        @component('common-components.dashboard-widget')
+
+            @slot('title') Total Store  @endslot
+            @slot('iconClass') mdi mdi-tag-plus-outline  @endslot
+            @slot('price') {{$stores->count()}}   @endslot
+
+        @endcomponent
+
+            @component('common-components.dashboard-widget')
+
+                @slot('title') Total Order  @endslot
+                @slot('iconClass') mdi mdi-tag-plus-outline  @endslot
+                @slot('price') {{$orders->count()}}   @endslot
+
+            @endcomponent
+
+
+    </div>
+
+    @widget('AdminVisitor',['count' => 10])
+    @widget('AdminStore',['count' => 10])
+
+    @endrole
+
 
 
     <!-- end row -->

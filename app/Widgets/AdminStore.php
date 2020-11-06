@@ -2,12 +2,12 @@
 
 namespace App\Widgets;
 
-use App\Admin\Visitor;
+use App\Admin\Admin;
 use App\User;
 use Arrilot\Widgets\AbstractWidget;
 use Carbon\Carbon;
 
-class TodayVisitor extends AbstractWidget
+class AdminStore extends AbstractWidget
 {
     /**
      * The configuration array.
@@ -23,12 +23,15 @@ class TodayVisitor extends AbstractWidget
      */
     public function run()
     {
-        //
-        $visitors = Visitor::where('user_id',auth()->guard('admin')->user()->id)->whereDate('created_at', Carbon::today()->toDateString())->get();
+        $stores = Admin::whereHas('roles', function ($q) {
+            $q->where('name', 'store');
+            $q->whereDate('created_at', Carbon::today()->toDateString());
+        })->latest()->get();
 
-        return view('widgets.today_visitor', [
+
+        return view('widgets.admin_store', [
             'config' => $this->config,
-            'visitors' => $visitors,
+            'stores' => $stores,
         ]);
     }
 }
