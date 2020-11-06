@@ -57,7 +57,7 @@
 
         @widget('RecentOrder',['count' => 10])
         @widget('RecentUser',['count' => 10])
-        @widget('TodayVisitor',['count' => 10])
+        @widget('TodayVisitor',['count' => 50])
 
     @endrole
 
