@@ -24,7 +24,7 @@ class TodayVisitor extends AbstractWidget
     public function run()
     {
         //
-        $visitors = Visitor::where('user_id',auth()->guard('admin')->user()->id)->whereDate('created_at', Carbon::today()->toDateString())->get();
+        $visitors = Visitor::where('user_id',auth()->guard('admin')->user()->id)->whereDate('created_at', Carbon::today()->toDateString())->latest()->get();
 
         return view('widgets.today_visitor', [
             'config' => $this->config,
