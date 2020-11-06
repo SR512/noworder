@@ -21,11 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c4de9a97-332b-4b8a-a937-4499bb5c13c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Widgets/TodayVisitor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Widgets/TodayVisitor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/widgets/recent_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/widgets/recent_user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/widgets/admin_store.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/widgets/admin_store.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +218,7 @@
       <workItem from="1603961386505" duration="177000" />
       <workItem from="1604034713235" duration="292000" />
       <workItem from="1604208955050" duration="68005000" />
-      <workItem from="1604641808348" duration="10626000" />
+      <workItem from="1604641808348" duration="10840000" />
     </task>
     <task id="LOCAL-00001" summary="Business Category Crude Done&#10;User Block,show detail Done&#10;Role Permission Done.">
       <created>1603444363534</created>
@@ -427,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604649068835</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Todays Visitors Store&#10;Todays Register Store Added Admin Panel">
+      <created>1604653947963</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1604653947963</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +475,8 @@
     <MESSAGE value="Order Display User Side Done." />
     <MESSAGE value="Login route problem solve." />
     <MESSAGE value="Todays Visitors Widget Added Dashboard." />
-    <option name="LAST_COMMIT_MESSAGE" value="Todays Visitors Widget Added Dashboard." />
+    <MESSAGE value="Todays Visitors Store&#10;Todays Register Store Added Admin Panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Todays Visitors Store&#10;Todays Register Store Added Admin Panel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="227" key="#Notifications" timestamp="1603357177521">
@@ -491,10 +495,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604652563553" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604649064055">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604653936776">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604649064055" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604653936776" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1604209844495">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -531,10 +535,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="210" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604643730065" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604649080682">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604653955851">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604649080682" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604653955851" />
     <state x="536" y="101" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1603956929881">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

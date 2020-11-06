@@ -48,6 +48,7 @@
                         </tbody>
                     </table>
                 </div>
+                <br/>
                 <div class="text-center">
                     <a href="{{route('user.home')}}" class="btn btn-primary btn-sm">Show All Store</a>
                 </div>
