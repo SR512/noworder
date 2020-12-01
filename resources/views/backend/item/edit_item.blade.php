@@ -43,6 +43,22 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
+                                    <label for="itemtype">{{ __('Item Type') }}</label>
+                                    <select class="form-control @error('itemtype') is-invalid @enderror" onchange="isItemtype(this.value)" name="itemtype">
+                                        <option value="0">Choose</option>
+                                        <option value="regular" {{$item->itemtype == 'regular' ?'selected':''}}>Regular</option>
+                                        <option value="attribute" {{$item->itemtype == 'attribute' ?'selected':''}}>Attribute</option>
+                                    </select>
+                                    @error('itemtype')
+                                    <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
                                     <label for="title">{{ __('Item Title') }}</label>
                                     <input type="text" name="title" value="{{  $item->title }}"
                                            autocomplete="title"
@@ -83,7 +99,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 itemprice" {{$item->itemtype  != 'regular' ? "style=display:none;":"style=display: block;"}}>
                                 <div class="form-group">
                                     <label for="price">{{ __('Item Price') }}</label>
                                     <input type="number" name="price" value="{{ $item->price}}"
@@ -98,7 +114,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 dicount" {{$item->itemtype  != 'regular' ? "style=display:none;":"style=display: block;"}}>
                                 <div class="form-group">
                                     <label for="discount">{{ __('Discount') }}</label>
                                     <select class="form-control @error('discount') is-invalid @enderror" onchange="isDiscount(this.value)" name="discount">
@@ -178,6 +194,16 @@
             } else {
                 $("#discountprice").val(" ");
                 $(".discountprice").hide();
+            }
+        }
+
+        function isItemtype(value) {
+            if (value == 'regular') {
+                $(".dicount").show();
+                $(".itemprice").show();
+            } else {
+                $(".dicount").hide();
+                $(".itemprice").hide();
             }
         }
     </script>

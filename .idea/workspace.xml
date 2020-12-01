@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4de9a97-332b-4b8a-a937-4499bb5c13c5" name="Default Changelist" comment="">
+    <list default="true" id="c4de9a97-332b-4b8a-a937-4499bb5c13c5" name="Default Changelist" comment="Attribute Crude Done.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/platform_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/platform_check.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_01_050854_create_product_attributes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_01_050854_create_product_attributes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/item/edit_item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/item/edit_item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/item/item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/item/item.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +224,7 @@
       <workItem from="1604208955050" duration="68005000" />
       <workItem from="1604641808348" duration="11016000" />
       <workItem from="1606799534183" duration="1345000" />
-      <workItem from="1606804857245" duration="4029000" />
+      <workItem from="1606804857245" duration="7715000" />
     </task>
     <task id="LOCAL-00001" summary="Business Category Crude Done&#10;User Block,show detail Done&#10;Role Permission Done.">
       <created>1603444363534</created>
@@ -443,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604654123899</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Attribute Crude Done.">
+      <created>1606810206081</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1606810206097</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +496,8 @@
     <MESSAGE value="Login route problem solve." />
     <MESSAGE value="Todays Visitors Widget Added Dashboard." />
     <MESSAGE value="Todays Visitors Store&#10;Todays Register Store Added Admin Panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Todays Visitors Store&#10;Todays Register Store Added Admin Panel" />
+    <MESSAGE value="Attribute Crude Done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Attribute Crude Done." />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="227" key="#Notifications" timestamp="1603357177521">
@@ -548,10 +556,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="210" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604643730065" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604654128652">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606810215130">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604654128652" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606810215130" />
     <state x="536" y="101" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1603956929881">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -560,10 +568,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1603993380911" />
-    <state x="390" y="99" width="585" height="534" key="find.popup" timestamp="1603998076564">
+    <state x="390" y="99" width="585" height="534" key="find.popup" timestamp="1606810918434">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="99" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1603998076564" />
+    <state x="390" y="99" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1606810918434" />
     <state x="339" y="164" key="run.anything.popup" timestamp="1604648177883">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

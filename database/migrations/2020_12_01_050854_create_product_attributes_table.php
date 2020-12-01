@@ -19,6 +19,8 @@ class CreateProductAttributesTable extends Migration
             $table->string('attribute')->nullable();
             $table->integer('status')->default(0);
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('admins')->onDelete('cascade');
+
         });
     }
 

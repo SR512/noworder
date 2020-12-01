@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Admin\Category;
 use App\Admin\Item;
 use App\Model\Menu;
+use App\Model\ProductAttribute;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 
@@ -28,7 +29,9 @@ class ItemController extends Controller
     public function create()
     {
         $categories = Category::where('user_id', auth()->guard('admin')->user()->id)->get();
-        return view('backend.item.item', compact('categories'));
+        $attributes = ProductAttribute::where('user_id',auth()->guard('admin')->user()->id)->where('status',1)->get();
+
+        return view('backend.item.item', compact('categories','attributes'));
     }
 
     /**
@@ -43,8 +46,9 @@ class ItemController extends Controller
 
         $this->validate($request, [
             'category' => 'required|not_in:0',
+            'itemtype' => 'required|not_in:0',
             'title' => 'required',
-            'price' => 'required|numeric',
+            'price' => 'nullable|numeric',
             'Menu_Image' => 'nullable|mimes:jpeg,jpg,png,gif|max:10000'
         ]);
 
@@ -56,6 +60,7 @@ class ItemController extends Controller
         $item = Item::create([
             'user_id' => auth()->guard('admin')->user()->id,
             'category_id' => $request['category'],
+            'itemtype' => $request['itemtype'],
             'title' => $request['title'],
             'caption' => $request['caption'],
             'image' => $Filename,
@@ -134,11 +139,12 @@ class ItemController extends Controller
         }
 
         $item->category_id = $request->category;
+        $item->itemtype = $request->itemtype;
         $item->title = $request->title;
         $item->caption = $request->caption;
-        $item->price = $request->price;
+        $item->price = $request->itemtype =='regular'?$request->price:null;
         $item->discount = $request->discount;
-        $item->discountprice = $request->discountprice;
+        $item->discountprice = $request->discount == 'NO'?null:$request->discountprice;
         $item->description = $request->description;
 
         if ($item->save()) {
