@@ -153,5 +153,14 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('attribute/list', 'AttributeController@getAttribute')->name('attributes.list');
     Route::get('attribute/status/{id}', 'AttributeController@changeStatus')->name('attributes.status');
 
+    // Product Attribute Value Route
+    Route::resource('attributevalues', 'AttributeValueController');
+    Route::get('attributevalue/home', 'AttributeValueController@index')->name('attributevalue.home');
+    Route::get('attributevalue/list', 'AttributeValueController@getItemAttribute')->name('attributevalues.list');
+
+
+
+
+
 
 });
