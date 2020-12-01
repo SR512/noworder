@@ -21,7 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c4de9a97-332b-4b8a-a937-4499bb5c13c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/widgets/admin_store.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/widgets/admin_store.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/platform_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/platform_check.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,23 +171,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.25763747" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\ordernow\resources\views\backend\item" />
-      <recent name="C:\xampp\htdocs\ordernow\app\Http\Controllers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\noworder\resources\views\backend" />
       <recent name="C:\xampp\htdocs\ordernow\resources\views\backend\user" />
       <recent name="C:\xampp\htdocs\ordernow\resources\views\backend" />
       <recent name="C:\xampp\htdocs\ordernow\resources\views\frontend" />
       <recent name="C:\xampp\htdocs\ordernow\vendor" />
-      <recent name="C:\xampp\htdocs\ordernow\public\appkit" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ordernow\resources\views\backend\item" />
+      <recent name="C:\xampp\htdocs\ordernow\app\Http\Controllers" />
     </key>
   </component>
   <component name="RunManager">
@@ -218,7 +222,9 @@
       <workItem from="1603961386505" duration="177000" />
       <workItem from="1604034713235" duration="292000" />
       <workItem from="1604208955050" duration="68005000" />
-      <workItem from="1604641808348" duration="10840000" />
+      <workItem from="1604641808348" duration="11016000" />
+      <workItem from="1606799534183" duration="1345000" />
+      <workItem from="1606804857245" duration="4029000" />
     </task>
     <task id="LOCAL-00001" summary="Business Category Crude Done&#10;User Block,show detail Done&#10;Role Permission Done.">
       <created>1603444363534</created>
@@ -430,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604653947963</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Todays Visitors Store&#10;Todays Register Store Added Admin Panel">
+      <created>1604654123899</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1604654123899</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,14 +504,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603697082245" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604652563553">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606808876821">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604652563553" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604653936776">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606808876821" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604654118413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604653936776" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604654118413" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1604209844495">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -535,10 +548,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="210" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604643730065" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604653955851">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604654128652">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604653955851" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604654128652" />
     <state x="536" y="101" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1603956929881">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

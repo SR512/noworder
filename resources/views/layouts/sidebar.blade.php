@@ -104,6 +104,15 @@
 
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="mdi mdi-flip-horizontal"></i>
+                        <span>Attribute</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{route('attributes.create')}}">Add Attribute</a></li>
+                        <li><a href="{{route('attributes.home')}}">View Attribute</a></li>
+                    </ul>
+
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-flip-horizontal"></i>
                         <span>Items</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">

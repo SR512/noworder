@@ -146,5 +146,12 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('printorder/{id}', 'OrderController@printorder')->name('orders.print');
     Route::get('orderhistory/status/{id}', 'OrderController@orderChangeStatus')->name('orderhistory.status');
 
+    // Product Attribute Route
+
+    Route::resource('attributes', 'AttributeController');
+    Route::get('attribute/home', 'AttributeController@index')->name('attributes.home');
+    Route::get('attribute/list', 'AttributeController@getAttribute')->name('attributes.list');
+    Route::get('attribute/status/{id}', 'AttributeController@changeStatus')->name('attributes.status');
+
 
 });
